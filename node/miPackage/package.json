@@ -1,0 +1,5 @@
+
+{
+  "name": "myNodeModule",
+  "main": "./lib/mymodule.js"
+}
