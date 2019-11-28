@@ -1,0 +1,27 @@
+version: "3.4"
+
+networks:
+
+  myapp-net:
+
+services:
+
+  greetings_service:
+
+    image: "registry.example.com:5000/node/greetings:1"
+
+    networks:
+
+      - myapp-net
+
+    ports:
+
+      - "8080:3000"
+
+  name_service:
+
+    image: "registry.example.com:5000/node/nameservice:1.1"
+
+    networks:
+
+      - myapp-net

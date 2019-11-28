@@ -1,0 +1,5 @@
+docker service create \
+--with-registry-auth \
+--name my_custom_app \
+--p 3000:300 \
+registry.example.com:5000/express/prueba:latest
